@@ -26,23 +26,21 @@ Calibration and Archive (Week 13)
 **Who:** Engineering managers
 **Time:** ~30 minutes
 
-### Steps
+1. **Confirm the roster.** List every engineer to assess this quarter. Include mid-quarter joiners — prorate their window.
 
-1. **Confirm assessment roster.** List every engineer who will be assessed this quarter. Include engineers who joined mid-quarter (prorate their assessment window).
+2. **Pick a tier.** Select Tier 1 (Starter) or Tier 2 (Advanced) for the team. Use the same tier across the team, not mixed.
 
-2. **Choose the tier.** Select Tier 1 (Starter) or Tier 2 (Advanced) for each team. A single team should use the same tier — don't mix tiers within a team.
+3. **Lock in dimension weights.** All four dimensions are equally weighted by default. If your org values some more (say, Enablement for platform teams), document that and announce it before the quarter starts.
 
-3. **Confirm dimension weights.** By default, all four dimensions carry equal importance. If your organization values certain dimensions more (e.g., Enablement for a platform team), document the weighting and communicate it before the quarter starts.
-
-4. **Distribute templates.** Give each engineer their assessment template:
+4. **Hand out templates:**
    - Tier 1: `templates/tier1-assessment.md`
    - Tier 2: `templates/tier2-assessment.md`
 
-5. **Set expectations.** Communicate:
-   - This is about outcomes and contribution, not activity
-   - Engineers should log contributions as they happen (not reconstruct from memory at quarter end)
-   - Evidence matters — design doc ownership, decision leadership, incident response roles
-   - The non-negotiable exclusions (no story points, LOC, commit counts, etc.)
+5. **Set clear expectations:**
+   - This measures outcomes and contribution, not activity.
+   - Engineers log contributions as they happen, not from memory at quarter end.
+   - Evidence matters — design doc ownership, decision calls, incident leadership.
+   - No story points, lines of code, or commit counts.
 
 ---
 
@@ -50,23 +48,18 @@ Calibration and Archive (Week 13)
 
 **When:** Throughout the quarter
 **Who:** Each engineer
-**Time:** ~5 minutes per significant contribution
+**Time:** ~5 minutes per contribution
 
-### What to Log
+Log significant work as it finishes:
 
-As significant work completes, engineers note:
+- The initiative or project
+- Your role: designed, built, reviewed, coordinated, or led incident response
+- The outcome: shipped feature, fewer incidents, time saved, better reliability
+- Evidence: design doc you authored, decision you made, incident you led
 
-- What initiative or project it was for
-- Their role (designed it, built it, reviewed it, coordinated it, led incident response)
-- The outcome (shipped feature, reduced incidents, saved time, improved reliability)
-- Evidence (design doc they authored, decision they drove, incident they led)
+Log at natural stops — shipped feature, resolved incident, approved design, quarter end. Skip the routine PRs and tickets. Log what moved the needle.
 
-### Tips
-
-- Log at natural milestones: feature shipped, incident resolved, design approved, quarter boundary
-- Don't log every PR or ticket — log the things that mattered
-- If you're unsure whether something counts, log it. You can remove it during self-assessment.
-- Contribution logging is lightweight by design. If it takes more than 5 minutes per entry, you're over-documenting.
+If you're not sure, log it. Trim during self-assessment. Five minutes per entry is the right pace. If you're spending more, you're overthinking it.
 
 ---
 
@@ -78,41 +71,41 @@ As significant work completes, engineers note:
 
 ### Step 3a: Engineer Self-Assessment
 
-Each engineer completes their assessment template using their contribution log.
+Fill out your assessment template using your contribution log.
 
-**For each dimension:**
-1. List the initiatives/contributions with evidence
-2. Self-rate a Contribution Factor (0--1) per initiative, referencing the rubric at `rubrics/contribution-factor.md`
-3. (Tier 2 only) Score the Complexity Factor per initiative using `rubrics/complexity-factor.md`
+For each dimension:
+1. List initiatives and contributions with evidence.
+2. Self-rate a Contribution Factor (0–1) per initiative using `rubrics/contribution-factor.md`.
+3. (Tier 2 only) Score Complexity Factor using `rubrics/complexity-factor.md`.
 
-**Self-assessment rules:**
-- Use the rubric levels, not gut feel. "I think I deserve 0.7" is not sufficient — cite which observable criteria you meet.
-- When in doubt, rate yourself lower and explain. Calibration can adjust upward; it's harder to adjust downward without friction.
-- Be specific about evidence. "I contributed to the project" is not evidence. "I authored the SAD, made the caching vs. queue architectural decision, and led the cross-team integration" is evidence.
+**Rules for self-assessment:**
+- Use the rubric levels, not intuition. "I think I deserve 0.7" doesn't work — say which criteria you meet.
+- When unsure, rate lower and explain. Calibration can move you up. Moving down hurts.
+- Be specific. "I contributed" isn't evidence. "I authored the SAD, chose the caching vs. queue approach, and led cross-team integration" is evidence.
 
 ### Step 3b: Manager Review
 
-Managers review each engineer's self-assessment within 1 week.
+Review each engineer's self-assessment within a week.
 
-**For each engineer:**
-1. Validate contribution claims against your own observations and available evidence
-2. Assign your own Contribution Factor rating (independent of the self-assessment)
-3. Note areas of agreement and disagreement
-4. (Tier 2 only) Validate Complexity Factor scores — was the work actually that complex?
+For each engineer:
+1. Validate contribution claims against what you saw and what the record shows.
+2. Assign your own Contribution Factor (independent of their self-rating).
+3. Flag agreement and disagreement.
+4. (Tier 2 only) Validate Complexity Factor — was that work really that hard?
 
-**Manager review rules:**
-- Don't rubber-stamp self-assessments. Your independent rating is the input to calibration.
-- If an engineer rated themselves significantly higher or lower than your assessment, note why. This becomes a calibration discussion point.
-- Collect peer input from 2--3 peers per engineer. Peer input is advisory — it informs your rating but doesn't override it.
+**Rules for manager review:**
+- Don't rubber-stamp. Your independent rating feeds calibration.
+- If they rated themselves much higher or lower than you would, note why. That's a calibration conversation.
+- Grab peer input from 2–3 people. It's advisory — it informs you but doesn't override you.
 
 ### Step 3c: Peer Input (Optional for Tier 1, Recommended for Tier 2)
 
-2--3 peers provide brief input per engineer:
-- What did this person contribute that you directly observed?
-- What Contribution Factor would you assign for the work you saw? (Use the rubric)
-- Any contribution the engineer might have missed in their self-assessment?
+Get input from 2–3 peers. Each peer answers:
+- What did they contribute that you saw directly?
+- What Contribution Factor for the work you observed? (Use the rubric)
+- Did they leave anything out?
 
-Peer input should take no more than 15 minutes per peer per engineer reviewed.
+Peer input: 15 minutes per person, per engineer.
 
 ---
 
@@ -124,32 +117,31 @@ Peer input should take no more than 15 minutes per peer per engineer reviewed.
 
 ### Step 4a: Calibration Meeting
 
-Use the calibration meeting template at `templates/calibration-agenda.md`.
+Use `templates/calibration-agenda.md`.
 
-**Pre-meeting (48 hours before):**
-- Managers submit preliminary ratings (their ratings, not self-assessments)
-- Calibration coordinator compiles the Contribution Factor distribution per team
+**48 hours before:**
+- Managers submit their ratings (not self-assessments).
+- Coordinator compiles Contribution Factor distribution per team.
 
-**During meeting:**
-1. Review Contribution Factor distribution — flag teams with >50% at 0.7+
-2. Walk through each engineer: manager presents, panel discusses
-3. Flag outliers (unusually high or low in any dimension)
-4. Reach consensus on adjustments (with stated rationale for each)
-5. Run the gaming detection checklist (`rubrics/gaming-detection.md`)
+**During the meeting:**
+1. Review Contribution Factor distribution. Flag teams with >50% at 0.7+.
+2. Walk through each engineer: manager presents, panel discusses.
+3. Flag outliers (unusually high or low per dimension).
+4. Reach consensus on changes (state why for each one).
+5. Run `rubrics/gaming-detection.md`.
 
-**Calibration rules:**
-- No stack ranking. Engineers are assessed against the rubric, not against each other.
-- No forced distribution. If a team genuinely has three Primary Drivers, that's fine — but validate with evidence.
-- Every adjustment requires a stated rationale. "We just feel it should be lower" is not a rationale.
-- Compare across similar roles and similar work types (backend to backend, not backend to SRE).
+**Rules:**
+- No stack ranking. Assess against the rubric, not each other.
+- No forced distribution. Three Primary Drivers on one team is fine if the evidence backs it.
+- Every change needs a reason. "We just feel it" doesn't count.
+- Compare like to like: backend to backend, not backend to SRE.
 
 ### Step 4b: Communication
 
-Within 1 week of calibration:
-- Manager shares the final assessment with each engineer in a 1:1
-- Highlight strengths (highest-dimension scores)
-- Discuss growth areas (lowest-dimension scores, if relevant to their role)
-- If calibration adjusted a score, explain why transparently
+Within a week of calibration, managers meet each engineer 1:1:
+- Show strengths (highest scores).
+- Talk through growth areas (lowest scores, if they matter to the role).
+- If calibration changed a score, say why.
 
 ### Step 4c: Archive
 
@@ -161,13 +153,13 @@ Within 1 week of calibration:
 
 ## Annual Synthesis
 
-At year end, compile the four quarterly assessments into a yearly view:
+At year end, pull the four quarterly assessments together:
 
-- Trend across quarters (improving, stable, declining per dimension)
-- Portfolio balance (is the engineer developing across dimensions, or staying single-dimensional?)
-- Growth trajectory (are growth areas from Q1 showing improvement by Q4?)
+- Trend per dimension (improving, flat, declining).
+- Balance (developing across all dimensions, or staying narrow).
+- Trajectory (did they work on growth areas from Q1 and improve by Q4).
 
-The annual synthesis is an input to performance conversations but is **not** a performance review itself. It is data, not judgment.
+The synthesis feeds performance conversations. It's not the review itself — it's the data the review uses.
 
 ---
 
@@ -185,17 +177,17 @@ The annual synthesis is an input to performance conversations but is **not** a p
 
 ## Common Questions
 
-**Q: What if an engineer worked on something that doesn't have measurable outcomes yet?**
-A: Use leading indicators (adoption, engagement) as proxies for the first 3 months. Apply a confidence discount to the Outcome Value. See the Attribution Lag table in `framework.md`.
+**Q: What if an engineer worked on something without measurable outcomes yet?**
+A: Use leading signals (adoption, engagement) for the first 3 months. Discount the Outcome Value for confidence. See the Attribution Lag table in `framework.md`.
 
-**Q: What if two engineers both claim Primary Driver?**
-A: This is a calibration issue. There can only be one Primary Driver per initiative. Use evidence (who authored the design doc, who made the final architectural calls) to determine the primary. The other is likely a Major Contributor (0.7).
+**Q: Two engineers both claim Primary Driver. What happens?**
+A: Calibration decides. One Primary Driver per initiative. Use evidence — design doc authorship, key architectural calls — to pick the primary. The other scores as Major Contributor (0.7).
 
-**Q: Should we compare scores across teams?**
-A: Compare within similar roles and work types. A platform engineer and a product engineer will have different dimension profiles by design — that's not a problem.
+**Q: Compare scores across teams?**
+A: Compare within similar roles and work. Platform and product engineers have different dimension profiles by design. That's expected.
 
-**Q: What if an engineer only works on one initiative per quarter?**
-A: That's fine. Their Contribution Factor on that one initiative carries their score. Complexity Factor ensures they aren't penalized for taking on a single hard problem.
+**Q: What if an engineer owns just one initiative per quarter?**
+A: Their score comes from that one initiative. Complexity Factor makes sure a single hard problem doesn't hurt them.
 
-**Q: How do we handle engineers who joined mid-quarter?**
-A: Prorate the assessment window. An engineer who joined 6 weeks into a 13-week quarter is assessed on 7 weeks of contribution, with cost prorated to match.
+**Q: Mid-quarter joiners?**
+A: Prorate the window. Six weeks into a 13-week quarter means assess 7 weeks of work, with cost prorated.
