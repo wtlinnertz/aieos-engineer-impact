@@ -44,9 +44,9 @@ ER §16 uses three coarse levels for quick recording at freeze time. The quarter
 
 | ER §16 Level | Typical Assessment Range | Meaning |
 |-------------|------------------------|---------|
-| **Primary** | 0.7 -- 1.0 | Drove the artifact — design ownership, final decisions, accountability |
-| **Significant** | 0.4 -- 0.6 | Major contributor — owned a subsystem, shaped direction, unblocked team |
-| **Supporting** | 0.1 -- 0.3 | Reviewed, consulted, assisted — meaningful input without decision authority |
+| **Primary** | 0.7 - 1.0 | Drove the artifact: design ownership, final decisions, accountability |
+| **Significant** | 0.4 - 0.6 | Major contributor: owned a subsystem, shaped direction, unblocked team |
+| **Supporting** | 0.1 - 0.3 | Reviewed, consulted, assisted: meaningful input without decision authority |
 
 The fine-grained score is determined by the rubric criteria in `rubrics/contribution-factor.md`, not by the ER §16 level alone. ER §16 is evidence; the rubric is the standard.
 

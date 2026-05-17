@@ -2,7 +2,7 @@
 
 The Contribution Factor measures an engineer's material influence on an initiative or project. It is based on observable behaviors, not output volume.
 
-**Scale:** 0.0 -- 1.0
+**Scale:** 0.0 - 1.0
 **Assignment:** Self-assessment, then manager review, then calibration
 
 ---
